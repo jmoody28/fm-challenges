@@ -1,0 +1,130 @@
+:root {
+  --ff-lexend: "Lexend Deka", sans-serif;
+  --ff-shoulder: "Big Shoulders Display", sans-serif;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --fs-15: 0.93rem;
+  --fs-32: 2rem;
+
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-blue: hsl(184, 100%, 22%);
+  --clr-green: hsl(179, 100%, 13%);
+
+  --clr-white: hsla(0, 0%, 100%, 0.75);
+  --clr-grey: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .box {
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 2.5em;
+}
+
+.icon {
+  height: 55px;
+  width: 55px;
+}
+
+.heading {
+  font-family: var(--ff-shoulder);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-32);
+  color: var(--clr-grey);
+  margin: 25px 0;
+}
+
+.text {
+  font-family: var(--ff-lexend);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-15);
+  color: var(--clr-white);
+  line-height: 2em;
+}
+
+.button {
+  display: block;
+  width: 80px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: var(--ff-lexend);
+  font-size: var(--fs-15);
+  background-color: var(--clr-grey);
+  padding: 14px 28px;
+  border-radius: 22px;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.08);
+  transition: all ease;
+}
+
+.button:active {
+  transform: scale(1.08);
+  transition: all ease;
+}
+
+/* SEDAN CARD */
+.sedan {
+  background-color: var(--clr-orange);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.sedan > .button {
+  color: var(--clr-orange);
+}
+
+/* SUV CARD */
+
+.suv {
+  background-color: var(--clr-blue);
+}
+
+.suv > .button {
+  color: var(--clr-blue);
+}
+
+/* LUXURY CARD */
+
+.luxury {
+  background-color: var(--clr-green);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.luxury > .button {
+  color: var(--clr-green);
+}
+
+@media (max-width: 500px) {
+  .sedan {
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+  }
+}
