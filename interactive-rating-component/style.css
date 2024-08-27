@@ -30,8 +30,8 @@ body {
   gap: 10px;
 }
 
-.rate-box,
-.thanks {
+#rate,
+#thanks {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,8 @@ body {
   border-radius: 20px;
 }
 
-.thanks {
+#thanks {
+  display: none;
   align-items: center;
 }
 
@@ -127,7 +128,7 @@ button {
   background-color: var(--clr-white);
 }
 
-.selection {
+#selection {
   font-family: var(--ff-overpass);
   font-size: 15px;
   color: var(--clr-orange);
