@@ -1,11 +1,6 @@
 :root {
   --ff-overpass: "Overpass";
 
-  --ff-normal: 400, 15px, "Overpass";
-  --fw-bold: 700;
-
-  --ff-size: 15px;
-
   --clr-orange: #fb7413;
   --clr-white: #ffffff;
   --clr-grey: #959eac;
@@ -22,8 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-veryDarkBlue);
-  /* background-color: black; */
-
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -38,7 +31,7 @@ body {
   background: linear-gradient(
     200deg,
     rgba(37, 45, 55, 1) 0%,
-    /* rgba(18, 20, 23, 1) 50%, */ rgb(28, 32, 37) 100%
+    rgb(28, 32, 37) 100%
   );
   width: 300px;
   max-width: 300px;
@@ -53,7 +46,6 @@ body {
 
 .star {
   margin-bottom: 20px;
-  /* border: 1px solid #242629; */
   border-radius: 50%;
   padding: 10px;
   background-color: var(--clr-darkBlue);
@@ -68,8 +60,6 @@ h1 {
   font-family: var(--ff-overpass);
   color: var(--clr-white);
   margin: 10px 0;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
 }
 
 p {
@@ -77,7 +67,6 @@ p {
   font-weight: 400;
   font-size: 15px;
   color: var(--clr-grey);
-  /* margin-bottom: 10px; */
 }
 
 .btn-row {
@@ -133,7 +122,6 @@ button {
   font-size: 15px;
   color: var(--clr-orange);
   background-color: var(--clr-darkBlue);
-  /* border: 1px solid var(--clr-veryDarkBlue); */
   border-radius: 20px;
   padding: 8px;
   margin-bottom: 20px;
