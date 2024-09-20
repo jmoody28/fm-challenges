@@ -23,19 +23,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(47, 21, 51, 1) 0%,
-    rgba(47, 21, 51, 1) 50%,
-    rgba(249, 240, 255, 1) 50%,
-    rgba(249, 240, 255, 1) 100%
-  );
-  min-height: 100vh;
+  background-color: rgba(249, 240, 255, 1);
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
 }
 
 @media (max-width: 375px) {
   body {
     padding: 10px;
+    background-image: url(assets/images/background-pattern-mobile.svg);
   }
   .container {
     max-width: 300px;
@@ -51,7 +49,6 @@ body {
   justify-content: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0.5px 0.5px black;
 }
 
 .hero {
@@ -109,7 +106,7 @@ h1 {
   display: none;
   font-family: var(--ff-work);
   font-size: var(--ff-size);
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: var(--clr-grayPurple);
   margin: 10px 0;
 }
